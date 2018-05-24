@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>307</height>
+    <width>315</width>
+    <height>434</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,27 +15,67 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0" colspan="3">
+    <item row="2" column="3">
+     <widget class="QPushButton" name="Delete">
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QPushButton" name="AddNumber">
+      <property name="text">
+       <string>Add Number</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
      <widget class="QListWidget" name="listWidget"/>
     </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="pushButton">
+    <item row="3" column="0" colspan="2">
+     <widget class="QLineEdit" name="EditName"/>
+    </item>
+    <item row="4" column="2" colspan="2">
+     <widget class="QPushButton" name="Submit">
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLineEdit" name="EditNumber"/>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="SearchB">
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <widget class="QLineEdit" name="Search"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="Edit">
       <property name="text">
        <string>Edit</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QPushButton" name="pushButton_3">
+    <item row="5" column="0" colspan="4">
+     <widget class="QPushButton" name="AddContact">
       <property name="text">
        <string>Add Contact</string>
       </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
      </widget>
     </item>
-    <item row="1" column="2">
-     <widget class="QPushButton" name="pushButton_2">
+    <item row="3" column="2" colspan="2">
+     <widget class="QPushButton" name="pushButton">
       <property name="text">
-       <string>Delete</string>
+       <string>SubmitNewNumber</string>
       </property>
      </widget>
     </item>
@@ -46,7 +86,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>315</width>
      <height>22</height>
     </rect>
    </property>

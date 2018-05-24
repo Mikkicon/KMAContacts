@@ -5,6 +5,7 @@
 #include <QAbstractListModel>
 #include "edit.h"
 #include <QMessageBox>
+#include "contact.h"
 
 
 namespace Ui {
@@ -16,31 +17,25 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-//    class Contact{
-//    public:
-//        Contact(QString Name, unsigned int number):_Name(Name), _condactid(_freeId++){
-//            _numbers.append(number);
-//        }
-//    private:
-//      QString _Name;
-//      QVector<unsigned int> _numbers;
-//      unsigned int _condactid;
-//      unsigned int _freeId=0;
-//    };
+
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-//   Contact & get(unsigned int condactid);
-//   void setContact(QString Name, unsigned int number, unsigned int condactid);
-//   void addContact(QString Name = "Misha Petrneko",unsigned int n=0, unsigned int number=044044044);
-//   void deleteContact(unsigned int condactid);
-//   const Contact & search(QString Name)const;
-//   const Contact & search(unsigned int number)const;
-
 private slots:
-    void on_pushButton_3_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_Edit_clicked();
+
+    void on_AddContact_clicked();
+
+    void on_Delete_clicked();
+
+    void on_Submit_clicked();
+
+    void on_AddNumber_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_SearchB_clicked();
 
 private:
     Ui::MainWindow *ui;
